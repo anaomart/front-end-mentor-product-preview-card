@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .main-img {
+    width: 120%;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-content .type {
+    text-transform: uppercase;
+    color: gray;
+    padding: 10px 0 10px 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.card-content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 40px;
+}
+
+.card-content .header {
+    width: 70%;
+    font-size: 32px;
+}
+
+.card-content .description {
+    width: 80%;
+    line-height: 1.5;
+    color: gray;
+    margin: 20px 0;
+}
+
+.card-content .price {
+    font-size: 42px;
+    color: hsl(158, 36%, 37%);
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.card-content .price::after {
+    content: "$169.99";
+    position: absolute;
+    font-size: 14px;
+    right: 75px;
+    top: 15px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.card-content button {
+    width: 90%;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
